@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="icon" href="/download.png" type="img/png">
+  <title>calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <i ondblclick="hide()" onclick="nohide()" class="material-icons" id="tt">more_vert</i>
+  <div id="conv">
+    <p>converter</p>
+  </div>
+  <div id="dis">
+    <p>discount</p>
+  </div>
+  <h1>calculator</h1>
+  <div class="calculator">
+    <input readonly id="show">
+    <div id="btns">
+    <button class="org" onclick="display('+')">+</button>
+      <button onclick="display(1)">1</button>
+    <button onclick="display(2)">2</button>
+     <button onclick="display(3)">3</button>
+     <button class="org" onclick="display('-')">-</button>
+    <button onclick="display(4)">4</button>
+    <button onclick="display(5)">5</button>
+    <button onclick="display(6)">6</button>
+    <button class="org" onclick="display('*')">×</button>
+    <button onclick="display(7)">7</button>
+    <button onclick="display(8)">8</button>
+    <button onclick="display(9)">9</button>
+    <button class="org" onclick="display('/')">÷</button>
+    <button onclick="display(0)">0</button>
+    <button onclick="display('.')">.</button>
+    <button onclick="calc()">=</button>
+    <button class="org" onclick="del()">AC</button>
+    <button class="org" onclick="dell()">del</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
